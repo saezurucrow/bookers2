@@ -1,0 +1,42 @@
+<%= form_for(@post_book, url: post_books_path) do |f| %>
+  <% if @post_book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @post_book.errors.count %>件のエラーが発生しました。</h2>
+      <ul>
+      <% @post_book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= render 'users/userinfo', user: @user %>
+ <%= render 'post_books/newbook', post_book: @post_book %>  <% end %>
+
+ <div class="container">
+    <div class="col-xs-9">
+ <h2>
+  <span>Books</span>
+ </h2>
+
+<table class="table table-condensed">
+            <thead>
+              <tr>
+                <th colspan="1"></th>
+                <th>Title</th>
+                <th>Opiniton</th>
+              </tr>
+            </thead>
+           <% @post_books.zip(@users).each do |post_book,user| %>
+            <tbody>
+              <tr>
+                <td><%= attachment_image_tag user, :profile_image, :fill, 50, 50, format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg" %></td>
+                <td><%= link_to post_book.title, post_book_path(post_book.id) %></td>
+                <td><%= post_book.opinion %></td>
+              </tr>
+            </tbody>
+            <% end %>
+</table>
+</div>
+</div>
+

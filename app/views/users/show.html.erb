@@ -1,0 +1,29 @@
+
+ <%= render 'users/userinfo', user: @user %>
+ <%= render 'post_books/newbook', post_book: @post_book %>
+ <div class="container">
+		<div class="col-xs-9">
+<h2>
+  <span>Books</span>
+ </h2>
+
+<table class="table table-condensed">
+            <thead>
+              <tr>
+                <th colspan="1"></th>
+                <th>Title</th>
+                <th>Opiniton</th>
+              </tr>
+            </thead>
+           <% @post_books.each do |post_book| %>
+            <tbody>
+              <tr>
+                <td><%= attachment_image_tag @user, :profile_image, :fill, 50, 50, format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg" %></td>
+                <td><%= link_to post_book.title, post_book_path(post_book.id) %></td>
+                <td><%= post_book.opinion %></td>
+              </tr>
+            </tbody>
+            <% end %>
+</table>
+		</div>
+	</div>
