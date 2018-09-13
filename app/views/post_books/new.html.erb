@@ -27,10 +27,10 @@
                 <th>Opiniton</th>
               </tr>
             </thead>
-           <% @post_books.zip(@users).each do |post_book,user| %>
+           <% @post_books.each do |post_book| %>
             <tbody>
               <tr>
-                <td><%= attachment_image_tag user, :profile_image, :fill, 50, 50, format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg" %></td>
+                <td><%= attachment_image_tag post_book.user, :profile_image, :fill, 50, 50, format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg" %></td>
                 <td><%= link_to post_book.title, post_book_path(post_book.id) %></td>
                 <td><%= post_book.opinion %></td>
               </tr>

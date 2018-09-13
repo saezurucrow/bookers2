@@ -23,7 +23,7 @@ end
         @post_book = PostBook.find(params[:id])
     end
 
-    def index 
+    def index
     end
 
     def show
@@ -48,8 +48,9 @@ end
     def post_book_params
         params.require(:post_book).permit(:title, :opinion, :profile_image)
     end
-      def user_params
-    params.require(:user).permit(:name,:profile_image,:introduction)
-  end
+    
+    def user_params
+        params.require(:user).permit(:name,:profile_image,:introduction)
+    end
 
 end
