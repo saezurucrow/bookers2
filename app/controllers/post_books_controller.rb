@@ -9,18 +9,21 @@ class PostBooksController < ApplicationController
         @post_books = PostBook.all
     end
 
-def create
-    @post_book = PostBook.new(post_book_params)
-    @post_book.user_id = current_user.id
-    if @post_book.save
-    redirect_to post_book_path(@post_book.id)
-    else
-        redirect_to :action => "new"
+    def create
+        @post_book = PostBook.new(post_book_params)
+        @post_book.user_id = current_user.id
+        if @post_book.save
+            redirect_to post_book_path(@post_book.id)
+        else
+            redirect_to :action => "new"
+        end
     end
-end
 
     def edit
         @post_book = PostBook.find(params[:id])
+        if @post_book.user_id != current_user.id then
+            redirect_to new_post_book_path
+        end
     end
 
     def index
@@ -28,6 +31,7 @@ end
 
     def show
         @user = current_user
+        @new_post_book = PostBook.new
         @post_book = PostBook.find(params[:id])
         @post_books = @user.post_books.page(params[:page]).reverse_order
     end
