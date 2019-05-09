@@ -15,6 +15,7 @@ class PostBooksController < ApplicationController
         if @post_book.save
             redirect_to post_book_path(@post_book.id)
         else
+            puts @post_book.errors.full_messages
             redirect_to :action => "new"
         end
     end
@@ -35,7 +36,7 @@ class PostBooksController < ApplicationController
         @post_book = PostBook.find(params[:id])
         @post_books = @user.post_books.page(params[:page]).reverse_order
     end
-
+Z
     def destroy
         @post_book = PostBook.find(params[:id])
         @post_book.destroy
@@ -50,9 +51,9 @@ class PostBooksController < ApplicationController
 
     private
     def post_book_params
-        params.require(:post_book).permit(:title, :opinion, :profile_image)
+        params.require(:post_book).permit(:title,:opinion, :profile_image)
     end
-    
+
     def user_params
         params.require(:user).permit(:name,:profile_image,:introduction)
     end

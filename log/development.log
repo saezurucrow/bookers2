@@ -10982,3 +10982,685 @@ Processing by PostBooksController#new as HTML
 Completed 200 OK in 276ms (Views: 241.6ms | ActiveRecord: 6.1ms)
 
 
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:271
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:271
+Started GET "/" for 10.0.2.2 at 2018-11-26 04:07:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PostBooksController#index as HTML
+  Rendering post_books/index.html.erb within layouts/application
+  Rendered post_books/index.html.erb within layouts/application (2.4ms)
+Started GET "/" for 10.0.2.2 at 2018-11-26 04:07:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#index as HTML
+  Rendering post_books/index.html.erb within layouts/application
+  Rendered post_books/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3396ms (Views: 3359.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 6567ms (Views: 6540.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2018-11-26 06:29:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PostBooksController#index as HTML
+  Rendering post_books/index.html.erb within layouts/application
+  Rendered post_books/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 1852ms (Views: 1808.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/post_books" for 10.0.2.2 at 2018-11-26 06:29:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#index as HTML
+  Rendering post_books/index.html.erb within layouts/application
+  Rendered post_books/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 297ms (Views: 269.1ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 10.0.2.2 at 2018-11-27 06:04:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PostBooksController#index as HTML
+  Rendering post_books/index.html.erb within layouts/application
+  Rendered post_books/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1488ms (Views: 1429.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-11-27 06:04:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 328ms (Views: 306.4ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-11-27 06:04:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 311ms (Views: 310.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2018-11-27 06:05:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 313ms (Views: 311.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-11-27 06:05:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PByvLQ09GqgWW1i1KtlfRG4oZxxNofBqb6RNoDFkIkylSTEtEMpfGe9TqgdmhW4+2EnOd08YRKQF/qmge65oaA==", "user"=>{"name"=>"saezurucrow", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["name", "saezurucrow"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 11ms (ActiveRecord: 1.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PByvLQ09GqgWW1i1KtlfRG4oZxxNofBqb6RNoDFkIkylSTEtEMpfGe9TqgdmhW4+2EnOd08YRKQF/qmge65oaA==", "user"=>{"name"=>"saezurucrow", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 409ms (Views: 282.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 10.0.2.2 at 2018-11-27 06:05:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BWn5R+KquEKORTmXsCtGulARd2ysfREU6znqkkuNARL7l7/uGKr0zXVFY7p5DPbC+rGFzoVIUrX/bz2uOCHeAQ==", "user"=>{"name"=>"saezurucrow", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["name", "saezurucrow"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 5ms (ActiveRecord: 1.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BWn5R+KquEKORTmXsCtGulARd2ysfREU6znqkkuNARL7l7/uGKr0zXVFY7p5DPbC+rGFzoVIUrX/bz2uOCHeAQ==", "user"=>{"name"=>"saezurucrow", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 371ms (Views: 256.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2018-11-27 06:05:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 319ms (Views: 317.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2018-11-27 06:05:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1Fd6Sd5nMkeXcI0csRHmrt2GqsHlPOknOEmO/TJrdxeOdf/AMbbUSuKpahm46dt6FNHh374c8FZd0U6qlt6/IQ==", "user"=>{"name"=>"saezurucrow", "email"=>"usobukuhito@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (3.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "usobukuhito@gmail.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 447ms (Views: 282.9ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2018-11-27 06:05:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ahuMS7IVUFJk/pFadvm8w3B2Slt/6mLglq285DZL/8iU5criSBUc3Z/+y3e/3gy72ta4+VbfIUGC+2vYRecg2w==", "user"=>{"name"=>"saezurucrow", "email"=>"t@t", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "t@t"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 415ms (Views: 256.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2018-11-27 06:06:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Xi2TUzbpkgPx+nq+8ak0UPn0ILTyonxCHFN5she/3MWg09X6zOnejAr6IJM4joQoU1TSFtuXP+MIBa6OZBMD1g==", "user"=>{"name"=>"saezurucrow", "email"=>"a@a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a@a"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (9.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "a@a"], ["encrypted_password", "$2a$11$IUadk/qdXUd1RY9nuLde6.XzeW/ABY5RjWsIiFxQoytF02QtFd2nO"], ["name", "saezurucrow"], ["created_at", "2018-11-27 06:06:00.504369"], ["updated_at", "2018-11-27 06:06:00.504369"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Update (4.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-11-27 06:06:00.521463"], ["last_sign_in_at", "2018-11-27 06:06:00.521463"], ["current_sign_in_ip", "10.0.2.2"], ["last_sign_in_ip", "10.0.2.2"], ["updated_at", "2018-11-27 06:06:00.523781"], ["id", 3]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 205ms (ActiveRecord: 23.7ms)
+
+
+Started GET "/users/3" for 10.0.2.2 at 2018-11-27 06:06:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (10.4ms)
+  Rendered post_books/_newbook.html.erb (22.5ms)
+  Rendered users/show.html.erb within layouts/application (74.0ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 6.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `titlee' for #<PostBook:0x00005646b8ad4c60>
+Did you mean?  title
+               title=
+               title?):
+    4: 
+    5:         <label class="control-label">Title</label><br />
+    6: 
+    7:         <%= f.text_field :titlee, class:"form-control", placeholder:"" %>
+    8: 
+    9:         <span class="fa fa-building form-control-icon" aria-hidden="true"></span>
+   10: 
+  
+app/views/post_books/_newbook.html.erb:7:in `block in _app_views_post_books__newbook_html_erb___2384869184348209456_69921934751600'
+app/views/post_books/_newbook.html.erb:1:in `_app_views_post_books__newbook_html_erb___2384869184348209456_69921934751600'
+app/views/users/show.html.erb:2:in `_app_views_users_show_html_erb___4500604846439722082_69921934884420'
+Started GET "/users/3" for 10.0.2.2 at 2018-11-27 06:06:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (9.8ms)
+  Rendered post_books/_newbook.html.erb (29.5ms)
+  [1m[36mPostBook Load (1.5ms)[0m  [1m[34mSELECT  "post_books".* FROM "post_books" WHERE "post_books"."user_id" = ? ORDER BY "post_books"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (73.5ms)
+Completed 200 OK in 346ms (Views: 315.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:06:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SoV/xq9f19MYOQ+3p/PQ+eBbIw42W971KOJ4M9EBFXm0ezlvVV+bXOM5VZpu1GCBSvvRrB9unVQ8tK8Poq3Kag==", "post_book"=>{"title"=>"asdf", "opinion"=>"asdf"}, "commit"=>"create book"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mPostBook Create (6.1ms)[0m  [1m[32mINSERT INTO "post_books" ("title", "opinion", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "asdf"], ["opinion", "asdf"], ["user_id", 3], ["created_at", "2018-11-27 06:06:42.916851"], ["updated_at", "2018-11-27 06:06:42.916851"]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/12
+Completed 302 Found in 42ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/post_books/12" for 10.0.2.2 at 2018-11-27 06:06:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPostBook Load (1.4ms)[0m  [1m[34mSELECT  "post_books".* FROM "post_books" WHERE "post_books"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:35
+  Rendering post_books/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (13.9ms)
+  Rendered post_books/_newbook.html.erb (1.5ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/show.html.erb:12
+  Rendered post_books/show.html.erb within layouts/application (73.0ms)
+Completed 200 OK in 357ms (Views: 334.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/3" for 10.0.2.2 at 2018-11-27 06:06:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (9.0ms)
+  Rendered post_books/_newbook.html.erb (1.1ms)
+  [1m[36mPostBook Load (1.0ms)[0m  [1m[34mSELECT  "post_books".* FROM "post_books" WHERE "post_books"."user_id" = ? ORDER BY "post_books"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (50.1ms)
+Completed 200 OK in 290ms (Views: 255.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/3" for 10.0.2.2 at 2018-11-27 06:09:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (844.5ms)
+  Rendered post_books/_newbook.html.erb (9.3ms)
+  [1m[36mPostBook Load (0.8ms)[0m  [1m[34mSELECT  "post_books".* FROM "post_books" WHERE "post_books"."user_id" = ? ORDER BY "post_books"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (900.3ms)
+Started GET "/users/3" for 10.0.2.2 at 2018-11-27 06:09:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+Completed 200 OK in 1630ms (Views: 1531.3ms | ActiveRecord: 10.7ms)
+
+
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (9.4ms)
+  Rendered post_books/_newbook.html.erb (0.9ms)
+  [1m[36mPostBook Load (1.3ms)[0m  [1m[34mSELECT  "post_books".* FROM "post_books" WHERE "post_books"."user_id" = ? ORDER BY "post_books"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 321ms (Views: 290.7ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:09:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/vagrant/bookers2/app/controllers/post_books_controller.rb:53: syntax error, unexpected ',', expecting ')'
+...ms.require(:post_book).permit(, :opinion, :profile_image)
+...                              ^
+/vagrant/bookers2/app/controllers/post_books_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/post_books_controller.rb:53: syntax error, unexpected ',', expecting ')'
+app/controllers/post_books_controller.rb:60: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/users/3" for 10.0.2.2 at 2018-11-27 06:10:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:14
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (854.4ms)
+  Rendered post_books/_newbook.html.erb (10.3ms)
+  [1m[36mPostBook Load (0.7ms)[0m  [1m[34mSELECT  "post_books".* FROM "post_books" WHERE "post_books"."user_id" = ? ORDER BY "post_books"."id" DESC LIMIT ? OFFSET ?[0m  [["user_id", 3], ["LIMIT", 25], ["OFFSET", 0]]
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (906.3ms)
+Completed 200 OK in 1529ms (Views: 1433.0ms | ActiveRecord: 14.6ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:10:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iNm6QDdnzHixsAmHYIRMksdjA1ZjknMMc4pykc5fZGV2J/zpzWeA90qwU6qpo/zqbcPx9EqnMK1n3KWtvfO7dg==", "post_book"=>{"title"=>"asdf", "opinion"=>"asdf"}, "commit"=>"create book"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/new
+Completed 302 Found in 39ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:10:10 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (10.9ms)
+  Rendered post_books/_newbook.html.erb (1.0ms)
+  [1m[36mPostBook Load (1.2ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 330ms (Views: 299.8ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/attachments/a7df6032c3086d68858d3c458f24799e34a451f5/store/fill/50/50/cb42404f37e47a5444670d02aaf2d27d9e0877290d282a971f7ba8e3219c/profile_image.jpeg" for 10.0.2.2 at 2018-11-27 06:10:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/b0f5e3e6d2788fa155bf0729e2e8bffc42eefef2/store/fill/50/50/2af35043d0ffa76d5d973c39382a6ac06de21831f7c623fb01fc6e828b9a/profile_image.jpeg" for 10.0.2.2 at 2018-11-27 06:10:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2018-11-27 06:10:11 +0000] GET "/b0f5e3e6d2788fa155bf0729e2e8bffc42eefef2/store/fill/50/50/2af35043d0ffa76d5d973c39382a6ac06de21831f7c623fb01fc6e828b9a/profile_image.jpeg" 200 105.3ms
+
+Refile::App: [2018-11-27 06:10:11 +0000] GET "/a7df6032c3086d68858d3c458f24799e34a451f5/store/fill/50/50/cb42404f37e47a5444670d02aaf2d27d9e0877290d282a971f7ba8e3219c/profile_image.jpeg" 200 238.0ms
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:10:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5YyvONTNgTIrW1UZbmNuwa1tRcjayAO+82u788NKdpgbcumRLs3NvdBbDzSnRN65B823avP9QB/nPWzPsOapiw==", "post_book"=>{"title"=>"fdsa", "opinion"=>"fdsa"}, "commit"=>"create book"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/new
+Completed 302 Found in 17ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:10:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (7.9ms)
+  Rendered post_books/_newbook.html.erb (0.8ms)
+  [1m[36mPostBook Load (1.0ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (78.5ms)
+Completed 200 OK in 333ms (Views: 305.0ms | ActiveRecord: 8.8ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"flH+NAunocRPeD2ZSF70oHfyYdagwlWZ7kpESg2kiRSAr7id8aftS7R4Z7SBeUTY3VKTdIn3Fjj6HJN2fghWBw==", "post_book"=>{"title"=>"fdsa", "opinion"=>"fdsa"}, "commit"=>"create book"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/new
+Completed 302 Found in 17ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:10:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (8.5ms)
+  Rendered post_books/_newbook.html.erb (1.9ms)
+  [1m[36mPostBook Load (0.9ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 327ms (Views: 296.7ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:11:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (817.7ms)
+  Rendered post_books/_newbook.html.erb (18.5ms)
+  [1m[36mPostBook Load (1.6ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (911.9ms)
+Completed 200 OK in 1585ms (Views: 1508.1ms | ActiveRecord: 17.3ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:11:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ky+bhAnMbmpYqn9VZoz+3pCaboEp06RZG2gz9Inyq/LV0d0t88wi5aOqJXivq06mOjqcIwDm5/gPPuTI+l504Q==", "post_book"=>{"title"=>"asdfasdf", "opinion"=>"asdfasdf"}, "commit"=>"create book"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/new
+Completed 302 Found in 37ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:11:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (8.6ms)
+  Rendered post_books/_newbook.html.erb (0.9ms)
+  [1m[36mPostBook Load (1.0ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 363ms (Views: 328.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:12:46 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (781.8ms)
+  Rendered post_books/_newbook.html.erb (11.2ms)
+  [1m[36mPostBook Load (1.2ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (859.1ms)
+Completed 200 OK in 1504ms (Views: 1425.1ms | ActiveRecord: 15.0ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:12:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HJqmGl6UdiCOVl9ajlYiyPOmT56Y4kwzkMTSpXcKD+7iZOCzpJQ6r3VWBXdHcZKwWQa9PLHXD5KEkgWZBKbQ/Q==", "post_book"=>{"title"=>" govbhpnj", "opinion"=>"buyhonjpkm"}, "commit"=>"create book"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/new
+Completed 302 Found in 32ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:12:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (9.9ms)
+  Rendered post_books/_newbook.html.erb (1.5ms)
+  [1m[36mPostBook Load (1.1ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (60.3ms)
+Completed 200 OK in 347ms (Views: 324.5ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:13:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HMX5eereNs4qD/24GrXS3gTHUbGHETL+3Sfouumo6H7iO7/QEN56QdEPp5XTkmKmrmejE64kcV/JcT+GmgQ3bQ==", "post_book"=>{"title"=>"", "opinion"=>"j"}, "commit"=>"create book"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :title
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/new
+Completed 302 Found in 16ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:13:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (27.5ms)
+  Rendered post_books/_newbook.html.erb (1.1ms)
+  [1m[36mPostBook Load (1.0ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (73.8ms)
+Completed 200 OK in 331ms (Views: 301.4ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/post_books" for 10.0.2.2 at 2018-11-27 06:13:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2Nk4yLcanYUYoDGnEf1jWKkdPesyiNVCNP6QPkJz6KEmJ35hTRrRCuOga4rY2tMgA73PSRu9luMgqEcCMd83sg==", "post_book"=>{"title"=>"", "opinion"=>""}, "commit"=>"create book"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Unpermitted parameter: :title
+  [1m[35m (1.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/post_books_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/post_books_controller.rb:15
+Redirected to http://localhost:3000/post_books/new
+Completed 302 Found in 20ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/post_books/new" for 10.0.2.2 at 2018-11-27 06:13:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostBooksController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering post_books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (8.8ms)
+  Rendered post_books/_newbook.html.erb (1.3ms)
+  [1m[36mPostBook Load (1.6ms)[0m  [1m[34mSELECT "post_books".* FROM "post_books"[0m
+  ↳ app/views/post_books/new.html.erb:30
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/post_books/new.html.erb:33
+  Rendered post_books/new.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 311ms (Views: 284.1ms | ActiveRecord: 7.0ms)
+
+
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:271
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:271
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:271
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/rake/task.rb:271
