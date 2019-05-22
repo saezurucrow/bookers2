@@ -15,14 +15,13 @@ class PostBooksController < ApplicationController
         if @post_book.save
             redirect_to post_book_path(@post_book.id)
         else
-            puts @post_book.errors.full_messages
             redirect_to :action => "new"
         end
     end
 
     def edit
         @post_book = PostBook.find(params[:id])
-        if @post_book.user_id != current_user.id then
+        if @post_book.user_id != current_user.id
             redirect_to new_post_book_path
         end
     end
@@ -36,7 +35,7 @@ class PostBooksController < ApplicationController
         @post_book = PostBook.find(params[:id])
         @post_books = @user.post_books.page(params[:page]).reverse_order
     end
-Z
+
     def destroy
         @post_book = PostBook.find(params[:id])
         @post_book.destroy
@@ -45,8 +44,10 @@ Z
 
     def update
         @post_book = PostBook.find(params[:id])
-        @post_book.update(post_book_params)
-        redirect_to post_book_path(@post_book.id)
+        if @post_book.update(post_book_params)
+            redirect_to post_book_path(@post_book.id)
+        else
+            redirect_to :action => "new"
     end
 
     private
