@@ -1,24 +1,62 @@
-# README
+#README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##機能追加案件
 
-Things you may want to cover:
+レベル1
+8 bookers2にコメント機能を追加しましょう。
+必須条件
+* 各投稿の詳細ページでコメントのCRUD
+* 自分以外の人の投稿の編集削除は制限
 
-* Ruby version
+9 bookers2にいいね機能を追加しましょう。
+必須条件
+* 各投稿のいいね数表示(一覧画面、詳細画面)
+* 詳細画面でいいねをしたユーザー一覧表示
 
-* System dependencies
 
-* Configuration
+10 bookers2にフォロー、フォロワー機能を追加しましょう。
+必要機能
+* フォロー数、フォロワー数、フォローしている・フォローされているユーザー名の表示
 
-* Database creation
+11 Gem cocoonを用いて子までネストするformを作成しましょう。
+投稿に複数のタグを結びつけてください。 必要機能
+* CRUD
+* 子モデルの追加削除 モデル: Post, Tag
 
-* Database initialization
+12 Gem cocoonを用いて孫までネストするformを作成しましょう。
+投稿に複数のタグ、タグに複数の説明を結びつけてください。 必要機能
+* CRUD
+* 各子モデルの追加削除 モデル: Post, Tag, Description
 
-* How to run the test suite
+13 bookers2でform_for, form_tag, form_withを使わずに実装してください
 
-* Services (job queues, cache servers, search engines, etc.)
+14 Google Map APIを用いて住所検索アプリを作成してください。
+「東京」で検索すると地図が表示されること
 
-* Deployment instructions
+レベル3
 
-* ...
+5 bookers2で検索機能を追加しましょう。
+必要機能
+* ユーザーの検索か投稿の検索かをプルダウンメニューで選択できること
+* 検索手法をプルダウンメニューで選択できること
+* 検索関連のgem, ライブラリ等は使用しないこと
+
+16 bookers2に非同期で投稿機能を実装してください
+必須条件
+* 各投稿を部分テンプレートにすること
+
+17 booker2に非同期でいいねを実装してください
+必須条件
+* jqueryのclick関数もしくはremote: trueを用いること
+* その際いいね数も切り替えること
+
+18 jsライブラリ slick.jsを用いた画像スライドショーをbookers2に組み込むこと(組み込む場所は指定しません)
+
+19 Facebookログインを実装してください
+必須条件
+* deviseを使用
+
+レベル4
+
+20 bookers2で検索機能を追加しましょう。
+必須条件 ユーザー・投稿の検索結果をそれぞれ表示すること
