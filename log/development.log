@@ -12217,3 +12217,55 @@ Processing by PostBooksController#index as HTML
 Completed 200 OK in 6605ms (Views: 6571.2ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Renamebook (20190926062906)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[35mALTER TABLE "post_books" RENAME TO "books"[0m
+  ↳ db/migrate/20190926062906_renamebook.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190926062906"]]
+  ↳ bin/rails:9
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to Renamecolumn (20190926063121)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190926063121_renamecolumn.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abooks" ("id" integer NOT NULL PRIMARY KEY, "title" text DEFAULT NULL, "body" text DEFAULT NULL, "user_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190926063121_renamecolumn.rb:3
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "abooks" ("id","title","body","user_id","created_at","updated_at")
+                     SELECT "id","title","opinion","user_id","created_at","updated_at" FROM "books"[0m
+  ↳ db/migrate/20190926063121_renamecolumn.rb:3
+  [1m[35m (3.4ms)[0m  [1m[35mDROP TABLE "books"[0m
+  ↳ db/migrate/20190926063121_renamecolumn.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer NOT NULL PRIMARY KEY, "title" text DEFAULT NULL, "body" text DEFAULT NULL, "user_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190926063121_renamecolumn.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "books" ("id","title","body","user_id","created_at","updated_at")
+                     SELECT "id","title","body","user_id","created_at","updated_at" FROM "abooks"[0m
+  ↳ db/migrate/20190926063121_renamecolumn.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "abooks"[0m
+  ↳ db/migrate/20190926063121_renamecolumn.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190926063121"]]
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
