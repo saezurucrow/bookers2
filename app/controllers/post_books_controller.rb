@@ -48,6 +48,7 @@ class PostBooksController < ApplicationController
             redirect_to post_book_path(@post_book.id)
         else
             redirect_to :action => "new"
+        end
     end
 
     private
