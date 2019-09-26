@@ -3,20 +3,20 @@ class UsersController < ApplicationController
 	before_action :authenticate_user!, except: [:new]
 
   def index
-  	@post_book = PostBook.new
+  	@book = Book.new
   	@user= current_user
     @users = User.all
   end
 
   def show
   	@user= current_user
-  	@post_book = PostBook.new
+  	@book = Book.new
   	@user = User.find(params[:id])
-  	@post_books = @user.post_books.page(params[:page]).reverse_order
+  	@books = @user.books.page(params[:page]).reverse_order
   end
 
   def edit
-  	@post_book = PostBook.new
+  	@book = Book.new
   	@user = User.find(params[:id])
   end
 
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   	if @user.update(user_params)
   	 redirect_to user_path(@user.id)
     else
-      redirect_to action: => "index"
+      redner :index
     end
   end
 
