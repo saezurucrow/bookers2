@@ -13719,3 +13719,69 @@ Processing by BooksController#show as HTML
 Completed 200 OK in 356ms (Views: 305.1ms | ActiveRecord: 3.8ms)
 
 
+Started GET "/books/1" for 10.0.2.2 at 2019-09-27 04:15:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:35
+  Rendering books/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (854.3ms)
+  Rendered books/_newbook.html.erb (3.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:10
+  Rendered books/show.html.erb within layouts/application (899.2ms)
+Completed 200 OK in 1522ms (Views: 1431.7ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/books/1" for 10.0.2.2 at 2019-09-27 04:17:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mBook Load (1.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:35
+  Rendering books/show.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (11.2ms)
+  Rendered books/_newbook.html.erb (1.3ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/show.html.erb:10
+  Rendered books/show.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 355ms (Views: 331.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users" for 10.0.2.2 at 2019-09-27 04:17:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (7.3ms)
+  Rendered books/_newbook.html.erb (0.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 282ms (Views: 265.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/books/new" for 10.0.2.2 at 2019-09-27 04:17:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering books/new.html.erb within layouts/application
+  Rendered users/_userinfo.html.erb (9.1ms)
+  Rendered books/_newbook.html.erb (0.9ms)
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/new.html.erb:30
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/new.html.erb:33
+  Rendered books/new.html.erb within layouts/application (45.9ms)
+Completed 200 OK in 278ms (Views: 250.6ms | ActiveRecord: 4.4ms)
+
+
