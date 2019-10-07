@@ -25,6 +25,6 @@
       </tr>
     </tbody>
   </table>
-  <%= @book.user.name %>
+  <%= link_to @book.user.name, user_path(@book.user) %>
 </div>
 </div>

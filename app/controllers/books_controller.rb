@@ -1,21 +1,23 @@
 class BooksController < ApplicationController
 
-    before_action :authenticate_user!, except: [:index]
+    before_action :authenticate_user!
 
     def create
         @book = Book.new(book_params)
         @book.user_id = current_user.id
         if @book.save
+            flash[:notice] = "successfully"
             redirect_to book_path(@book.id)
         else
-            redirect_to :action => "new"
+            flash[:notice] = "error"
+            redirect_to books_path
         end
     end
 
     def edit
         @book = Book.find(params[:id])
         if @book.user_id != current_user.id
-            redirect_to new_book_path
+            redirect_to books_path
         end
     end
 
@@ -27,24 +29,26 @@ class BooksController < ApplicationController
     end
 
     def show
-        @user = current_user
         @new_book = Book.new
         @book = Book.find(params[:id])
+        @user = @book.user
         @books = @user.books.page(params[:page]).reverse_order
     end
 
     def destroy
         @book = Book.find(params[:id])
         @book.destroy
-        redirect_to :action => "new"
+        redirect_to books_path
     end
 
     def update
         @book = Book.find(params[:id])
         if @book.update(book_params)
+            flash[:notice] = "successfully"
             redirect_to book_path(@book.id)
         else
-            redirect_to :action => "new"
+            flash[:notice] = "error"
+            render :edit
         end
     end
 
