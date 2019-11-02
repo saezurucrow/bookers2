@@ -33,7 +33,7 @@ class BooksController < ApplicationController
         @new_book = Book.new
         @book = Book.find(params[:id])
         @user = @book.user
-        @books = @user.books.page(params[:page]).reverse_order
+        @book_comment = BookComment.new
     end
 
     def destroy

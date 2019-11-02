@@ -1,4 +1,4 @@
- <%= render 'users/userinfo', user: @user %>
+<%= render 'users/userinfo', user: @user %>
 <%= render 'books/newbook', book: @new_book %>
 <div class="container">
   <div class="col-xs-9">
@@ -25,6 +25,42 @@
       </tr>
     </tbody>
   </table>
-  <%= link_to @book.user.name, user_path(@book.user) %>
+  <%= link_to @book.user.name, user_path(@book.user) %>さん
+
+  <div class="float-wrapper">
+    <h4 class="comment-count"><%= @book.book_comments.count %>件コメント</h4>
+  </div>
+
+  <ol>
+    <% @book.book_comments.each do |book_comment| %>
+        <li class="comment">
+            <div class="comment-body bb">
+                <div class="comment-avatar">
+                    <div class="avatar">
+                      <%= attachment_image_tag book_comment.user, :profile_image,  size:'50x50', format: 'jpeg', class: "pull-left profile-img", fallback: "no_image.jpg" %>
+                    </div>
+                </div>
+                <div class="comment-text">
+                    <div class="comment-author clearfix">
+                        <a href="#" class="link-author"><%= book_comment.user.name %></a>
+                        <span class="comment-meta">
+                          <span class="comment-date"><%= book_comment.created_at.strftime('%Y/%m/%d') %></span>
+                          <span><%= book_comment.comment %></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </li>
+    <% end %>
+</ol>
+
+<%= form_for [@book, @book_comment] do |f| %>
+    <div class="row">
+        <div class="col-sm-12">
+            <%= f.text_area :comment, rows:'5', class: "form-control",placeholder: "コメントをここに" %>
+        </div>
+    </div>
+    <%= f.submit "送信する", class: "btn btn-lg btn-base-1 mt-20 pull-right" %>
+<% end %>
 </div>
 </div>
