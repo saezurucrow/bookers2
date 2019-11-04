@@ -39,6 +39,7 @@
         <td><%= book_comment.user.name %>さん</td>
         <td><%= book_comment.comment %></td>
         <td><%= book_comment.created_at.strftime('%Y/%m/%d') %></td>
+        <td><%= link_to "削除",book_book_comments_path(book_comment) , method: :delete %></td>
       </tr>
     <% end %>
   </table>
