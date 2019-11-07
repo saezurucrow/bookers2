@@ -25,12 +25,18 @@
       </tr>
     </tbody>
   </table>
-  <%= link_to @book.user.name, user_path(@book.user) %>さん
+  <div><%= link_to @book.user.name, user_path(@book.user) %>さん</div>
 
+  <div>
   <% if @book.favorited_by?(current_user) %>
     <%= link_to book_favorites_path(@book), method: :delete do %>
       <i class="glyphicon glyphicon-heart" aria-hidden="true" style="color: red;"></i>
       <%= @book.favorites.count %> いいね
+    <% end %>
+    <% @book.favorites.each do |favorite| %>
+      <%= link_to user_path(favorite.user) do %>
+        <%= attachment_image_tag favorite.user, :profile_image, size:'50x50', format: 'jpeg', class: "profile-img", fallback: "no_image.jpg" %>
+      <% end %>
     <% end %>
   <% else %>
     <%= link_to book_favorites_path(@book), method: :post do %>
@@ -38,6 +44,7 @@
       <%= @book.favorites.count %> いいね
     <% end %>
   <% end %>
+  </div>
 
   <div class="float-wrapper">
     <h4 class="comment-count"><%= @book.book_comments.count %>件コメント</h4>
