@@ -32,3 +32,6 @@ tmp/*
 /config/master.key
 
 ubuntu-bionic-18.04-cloudimg-console.log
+spec/files/.DS_Store
+spec/.DS_Store
+.DS_Store
