@@ -9,7 +9,6 @@ class BooksController < ApplicationController
             flash[:notice] = "successfully"
             redirect_to book_path(@book.id)
         else
-            binding.pry
             flash[:notice] = "error"
             redirect_to books_path
         end
