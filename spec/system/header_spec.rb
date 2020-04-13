@@ -27,7 +27,7 @@ describe 'ヘッダーのテスト' do
       end
       it 'loginリンクが表示される' do
         login_link = find_all('a')[3].native.inner_text
-        expect(login_link).to match(/login/i)
+        expect(login_link).to match(/log in/i)
         #is_expected.to have_content 'login'
       end
     end
