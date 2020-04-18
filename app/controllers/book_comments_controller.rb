@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class BookCommentsController < ApplicationController
   def create
     book = Book.find(params[:book_id])
@@ -14,8 +16,9 @@ class BookCommentsController < ApplicationController
   end
 
   private
+
   def book_comment_params
-  params.require(:book_comment).permit(:user_id,
-                      :comment)
+    params.require(:book_comment).permit(:user_id,
+                                         :comment)
   end
 end
